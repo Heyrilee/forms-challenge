@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Forms Challenge</title>
+  </head>
+  <header>
+    <h1>Forms Challenge</h1>
+  </header>
+  <body>
+    <!-- Grid Form -->
+    <h2>Grid Form</h2>
+    <form action="/" class="grid">
+      <label for="Name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="First and last name"
+        required
+      />
+      <label for="phone">Phone #</label>
+      <input
+        type="tel"
+        name="phone-num"
+        id="phone"
+        placeholder="(888)-(777)-(1111)"
+      />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email@email.com"
+      />
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Type your message here"
+      >
+      </textarea>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+
+    <!-- Flexbox Form -->
+    <h2>Flexbox Form</h2>
+    <form action="/" class="flex">
+      <div class="flex-container">
+        <form>
+          <ul class="flex-outer">
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="First and last name" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@email.com" />
+            </li>
+            <li>
+              <label for="phone">Phone #</label>
+              <input
+                type="tel"
+                name="phone-num"
+                id="phone"
+                placeholder="(222)-(444)-(7777)"
+              />
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                rows="9"
+                id="message"
+                placeholder="Enter your message here"
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit" value="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </form>
+  </body>
+</html>
